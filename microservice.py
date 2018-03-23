@@ -10,10 +10,10 @@ app = Flask(__name__)
 #         /determineTime/42/determineTime/yyyy
 #   "yyyy" is passed as the value of the input parameter.
 #
-@app.route('/<remainderOfUrl>')
+@app.route('/watson/<remainderOfUrl>')
 def determineTime(remainderOfUrl):
-    timezone = str(remainderOfUrl)
-    return mess4 
+    inp = str(remainderOfUrl)
+    return inp
     
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
